@@ -10,7 +10,7 @@ def give_me_name():
 
     name = input("\t\tPodaj swoje imię: ")
     while True:
-        if isinstance(name, str):
+        if name.isalpha():
             break
         else:
             print('Imię musi skłdać sie z liter! spróbuj jeszcze raz!')
